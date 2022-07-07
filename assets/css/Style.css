@@ -1,4 +1,33 @@
+/*------General code-------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color: #ffffff;
+}
+
+/*---x---General code---x----*/
+
+
+
+/*------Navbar-------*/
+.navbar{
+    padding: 18px;
+    background: linear-gradient(rgba(131, 102, 77, 0.7), rgba(131, 102, 77, 0.7));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hero-space{
+    padding-top: 7px;
+}
+
+
 #hero{
     background: url("../images/1.jpg") no-repeat center center/cover ;
     height: 100vh;
 }
+
+/*---x-----Navbar---x-------*/
