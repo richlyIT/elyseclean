@@ -152,6 +152,8 @@ nav ul li{
 /*---x-------header------x-------*/
 
 
+
+
 /*----------Card Section------x-------*/
 .demo{
     position: relative;
@@ -163,33 +165,44 @@ nav ul li{
 .demo .demo-img{
     position: absolute;
     left: 30%;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: var(--black-color);
 }
 
 .demo .demo-img i{
     position: absolute;
-    left: 30%;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+    font-size: 35px;
     color: var(--white-color);
 }
 
 
 .demo h3{
    font-weight: bold;
-   font-size: 25px;
-   margin-top: 40%;
+   font-size: 20px;
+   margin-top: 45%;
    text-align: center;
 }
 
-
 .demo p{
     font-size: 15px;
-    margin-top: 40%;
+    margin-top: 20%;
     text-align: center;
  }
+
+ .card-button{
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card-button a{
+   border: 5px solid var(--white-color);
+   background-color: var(--yellow-color);
+   color: var(--white-color);
+ }
+
 /*----------Card Section------x-------*/
