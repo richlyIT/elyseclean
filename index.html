@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!----X-------Bootstap CSS------X----->
 
+     <!-----------Box-icons CSS----------->
+     <link rel="stylesheet" href="./assets/css/boxicons.min.css">
+    <!----X-------Box-icons CSS------X----->
+
+
      <!-------------Google font------------>
      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
      <!----X--------Google font------X----->
@@ -23,10 +28,10 @@
 
   </head>
   <body>
-    <header id="hero">
+    <header id="hero" class="header">
         <div class="hero-space">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
+                <div class="container-fluid">
                   <a class="navbar-brand" href="#">Elyseclean</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +40,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                          <a class="nav-link active"href="#">HOME</a>
                         </li>
     
                         <li class="nav-item">
@@ -67,26 +72,39 @@
                             </ul>
                           </li>
                         
-                        <li class="nav-item">
-                          <a class="nav-link">BLOG</a>
-                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                          </li>
                        
                         <li class="nav-item">
-                          <a class="nav-link">CONTACT</a>
+                          <a class="nav-link" href="#" >CONTACT</a>
                         </li>
-                        <li class="nav-item">
-                          <button type="button" class="btn btn-outline-dark">Book Now</button>              </li>
                       </ul>
+
+                      <a href="" class="btn btn-brand ms-lg-3">
+                            <span>
+                                <i class='bx bxs-calendar m-lg-2'></i>
+                            </span> 
+                            Book Now
+                        </a>
+                        
                   </div>
                 </div>
               </nav>
         </div>
 
           <!------hero section------->
-          <div class="hero" >
-            <h1>
-                SEATTLE’S BEST HOUSE & AIRBNB CLEANING SERVICE.
-            </h1>
+          <div class="container">
+            <div class="row">
+                <div class="col-12">
+                <div class="hero-section">
+                    <h1 cl>ElyseClean</h1>
+                    <h3>  SEATTLE’S BEST HOUSE & AIRBNB CLEANING SERVICE.</h3>
+                    <p>RELIABLE HOUSE CLEANING PROFESSIONALS SERVING THE GREATER SEATTLE AREA</p>
+                    <a href="" class="btn btn-hero">SCHEDULE YOUR CLEANING SERVICE</a>
+                </div>
+                </div>
+            </div>
           </div>
             <!--x----hero section---x---->
     </header>

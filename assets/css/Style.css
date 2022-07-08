@@ -7,27 +7,111 @@
 
 :root{
     --white-color: #ffffff;
+    --yellow-color: #FBC009;
+    --book-now: #F64D11;
+    --dark-color:rgba(255, 255, 255, 0)
 }
 
 /*---x---General code---x----*/
 
 
+/*----------header-------------*/
+.header{
+    position: relative;
+}
 
-/*------Navbar-------*/
+/*----Navbar-------*/
 .navbar{
-    padding: 18px;
-    background: linear-gradient(rgba(131, 102, 77, 0.7), rgba(131, 102, 77, 0.7));
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 16px;
+    background: linear-gradient(rgba(100, 100, 111, 0.8), rgba(100, 100, 111, 0.8));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.hero-space{
-    padding-top: 7px;
+.navbar-brand{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0000;
+}
+
+nav a.nav-links{
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
+
+nav ul li{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a{
+    margin-left: 0.17rem;
+    margin-right: 0.17rem;
+    color: var(--white-color) !important;
+    border-bottom: 0.1875rem solid var(--dark-color);
 }
 
 
+
+.navbar-nav > li > a:active, .navbar-nav > li > a:focus{
+    border-bottom: 0.1875rem solid var(--white-color);
+}
+
+.navbar-nav > li > a:hover{
+    border-bottom: 0.1875rem solid var(--white-color);
+}
+
+/*-------BTN---------*/
+
+.btn-brand{
+    font-weight: 700;
+    font-size: 15px;
+    background: var(--yellow-color);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.btn-brand span i{
+    font-size: 23px;
+}
+
+
+.btn-brand:hover{
+    background: var(--book-now);
+    color: var(--white-color);
+}
+
+/*---x----Navbar--x-----*/
+
+
+
+/*----------hero-------*/
 #hero{
-    background: url("../images/1.jpg") no-repeat center center/cover ;
+    background: url("../images/2.jpg") no-repeat center center/cover ;
     height: 100vh;
 }
+.hero-space{
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0);
+} 
 
-/*---x-----Navbar---x-------*/
+.hero-section{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center;
+}
+
+
+.hero-section h1{
+    font-weight: bold;
+    color: var(--white-color);
+    font-size: 50px;
+}
+
+
+/*---x-------hero-------x-----*/
+
+/*---x-------header------x-------*/
