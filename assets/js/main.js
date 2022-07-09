@@ -14,7 +14,7 @@ let menu = [
         link: "",
     },
     {
-        image: "/assets/images/cardImage2.jpg",
+        image: "1.jpg",
         title: "Deep Cleaning",
         text: "Ideal for homes that have gone months without being cleaned or have NOT been professionally cleaned in a while. This service includes cleaning window sills, hand detail blinds & hand detail baseboards.",
         link: "",
