@@ -154,55 +154,81 @@ nav ul li{
 
 
 
-/*----------Card Section------x-------*/
-.demo{
-    position: relative;
-    padding: 32px;
-    background-color: var(--white-color);
-    box-shadow: var(--shadow);
-}
-
-.demo .demo-img{
-    position: absolute;
-    left: 30%;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: var(--black-color);
-}
-
-.demo .demo-img i{
-    position: absolute;
-    left: 25%;
-    top: 25%;
-    font-size: 35px;
-    color: var(--white-color);
-}
-
-
-.demo h3{
-   font-weight: bold;
-   font-size: 20px;
-   margin-top: 45%;
-   text-align: center;
-}
-
-.demo p{
-    font-size: 15px;
-    margin-top: 20%;
-    text-align: center;
- }
-
- .card-button{
-    padding-top: 50px;
-    justify-content: center;
+/*----------Services Section------x-------*/
+.services-section{
+    /*background-image: linear-gradient(rgba(185, 184, 245, 0.89), rgba(255, 255, 255, 0.8)), url("/assets/images/black.jpg");
+    */
+    display: flex;
+    flex-direction: column;
     align-items: center;
- }
+    font-family: 'Roboto', sans-serif;
+}
 
- .card-button a{
-   border: 5px solid var(--white-color);
-   background-color: var(--yellow-color);
-   color: var(--white-color);
- }
+.card{
+    margin: 0 0 16px 16px;
+    transition: 0.2ms ease-out;
+    }
 
-/*----------Card Section------x-------*/
+.card:hover{
+    bottom: 15px;
+    width: 23rem;
+}
+
+.card-body{
+    background-color: #000;
+    color: #ffffff;
+}
+
+.title{
+    padding: 60px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 40px;
+}
+
+.card-title{
+    padding: 0 0 16px 0;
+}
+
+.card-text{
+    padding: 0 0 16px 0;
+}
+
+.btns{
+    padding: 16px 0 16px 0;
+}
+
+.btn-book{
+    background-color: #F64D11;
+    color: #ffffff;
+    font-size: 16px;
+    border: solid #000 1px;
+    transition: 0.4s;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.btn-card{
+    background-color: #fbc009;
+    color: #000;
+    font-size: 16px;
+    border: solid #000 1px;
+    transition: 0.10000ms;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+.btn-card:hover{
+    background-color: #F64D11;
+    color: #ffffff;
+}
+.btn-book:hover{
+    background-color: #fbc009;
+    color: #000;
+}
+
+i{
+    padding-right: 10px;
+}
+
+/*----------Services Section------x-------*/
