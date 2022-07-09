@@ -1,3 +1,4 @@
+/*
 //Services section
 //Card
 let menu = [
@@ -14,7 +15,7 @@ let menu = [
         link: "",
     },
     {
-        image: "1.jpg",
+        image: "/assets/images/cardImage2.jpg",
         title: "Deep Cleaning",
         text: "Ideal for homes that have gone months without being cleaned or have NOT been professionally cleaned in a while. This service includes cleaning window sills, hand detail blinds & hand detail baseboards.",
         link: "",
@@ -43,3 +44,5 @@ window.addEventListener("DOMContentLoaded", function(){
     cardSection.innerHTML = displayCard
     console.log(displayCard);
 });
+
+*/
