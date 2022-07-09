@@ -8,21 +8,13 @@ let menu = [
         link: "",
     },
     {
-<<<<<<< HEAD
-        image: "assets/images/cardimage1.jpg",
-=======
         image: "./assets/images/cardImage1.jpg",
->>>>>>> 18a49c532b94c3523ad49cf673a37d63a6f3d1fe
         title: "Move Out/In Cleaning",
         text: "This service is extremely thorough top to bottom, designed to prepare a home for a new tenant. This service includes cleaning Inside Kitchen Cabinets, Inside Oven & Fridge, Interior Windows & Sills, Detail Blinds & Detail Baseboards.",
         link: "",
     },
     {
-<<<<<<< HEAD
-        image: "assets/images/cardimage2.jpg",
-=======
         image: "./assets/images/cardImage2.jpg",
->>>>>>> 18a49c532b94c3523ad49cf673a37d63a6f3d1fe
         title: "Deep Cleaning",
         text: "Ideal for homes that have gone months without being cleaned or have NOT been professionally cleaned in a while. This service includes cleaning window sills, hand detail blinds & hand detail baseboards.",
         link: "",
@@ -50,10 +42,6 @@ window.addEventListener("DOMContentLoaded", function(){
     displayCard = displayCard.join("")
     cardSection.innerHTML = displayCard
     console.log(displayCard);
-<<<<<<< HEAD
-});
-=======
 });
 
-*/
->>>>>>> 18a49c532b94c3523ad49cf673a37d63a6f3d1fe
+
