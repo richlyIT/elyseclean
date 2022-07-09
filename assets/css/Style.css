@@ -198,6 +198,12 @@ nav ul li{
     padding: 16px 0 16px 0;
 }
 
+.card-img-top{
+    
+    background: url("/assets/images/1.jpg") no-repeat;
+
+}
+
 .btn-book{
     background-color: #F64D11;
     color: #ffffff;
