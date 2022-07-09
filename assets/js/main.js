@@ -3,7 +3,7 @@
 //Card
 let menu = [
     {
-        image: "./assets/images/1.jpg",
+        image: "assets/images/1.jpg",
         title: "House Cleaning",
         text: "Forget cleaning, enjoy the benefits of a full-time housekeeper without the cost, this is the most commonly requested service for families, busy professionals & those who value their time, we’ll keep your house clean & fresh.",
         link: "",
