@@ -1,4 +1,4 @@
-/*------General code-------*/
+*------General code-------*/
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     --yellow-color: #FBC009;
     --book-now: #F64D11;
     --dark-color:rgba(255, 255, 255, 0);
-    --black-color: #000000;
+    --black-color:  #092032;;
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -21,20 +21,22 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-
 /*---x---General code---x----*/
 
 
-/*----------header-------------*/
-.header{
-    position: relative;
+/*----Navbar-------*/
+
+.navbar{
+    background: linear-gradient(rgba(9, 32, 50, 0.6), rgba(9, 32, 50, 0.6));
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    margin-top: 5px;
 }
 
-/*----Navbar-------*/
-.navbar{
-    padding: 16px;
-    background: linear-gradient(rgba(9, 32, 50, 0.6), rgba(9, 32, 50, 0.6));
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+.navbar .hambuger i{
+    font-size: 28px;
+    color: #ffffff;
 }
 
 .navbar-brand h1{
@@ -42,6 +44,13 @@ font-family: 'Roboto', sans-serif; */
     font-size: 26px;
     font-weight: 700;
     color: var(--white-color);
+}
+
+.bgcolor.scrolled{
+    background:rgba(246, 80, 19);
+    color: var(--black-color);
+    transition: 1s all;
+    margin-top: 0;
 }
 
 nav a.nav-links{
@@ -60,17 +69,49 @@ nav ul li{
     margin-right: 0.17rem;
     color: var(--white-color) !important;
     border-bottom: 0.1875rem solid var(--dark-color);
+    border-top: 0.1875rem solid var(--dark-color);
 }
 
+.navbar-nav > li:hover > a{
+    color: var(--book-now) !important;
+    font-weight: bold;
+}
 
 
 .navbar-nav > li > a:active, .navbar-nav > li > a:focus{
     border-bottom: 0.1875rem solid var(--white-color);
+    border-top: 0.1875rem solid var(--white-color);
 }
 
 .navbar-nav > li > a:hover{
     border-bottom: 0.1875rem solid var(--white-color);
+    border-top: 0.1875rem solid var(--white-color);
+    transition: ease 1s all;
 }
+
+.dropdown-menu{
+    background-color:#092032d1;
+}
+
+.dropdown-menu > li > a{
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 13px;
+    padding: 9px;
+    border-bottom: 0.1875rem solid var(--dark-color);
+}
+
+.dropdown-menu > li > a:active, .dropdown-menu > li > a:focus{
+    border-bottom: 0.1875rem solid var(--white-color);
+}
+
+.dropdown-menu > li > a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--white-color);
+    border-bottom: 0.1875rem solid var(--white-color);
+    transition: ease 1s all;
+}
+
 
 /*-------BTN---------*/
 
@@ -98,58 +139,192 @@ nav ul li{
 
 
 /*----------hero-------*/
-#hero{
-    background:linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url("../images/3.jpg") no-repeat center center/cover ;
+.hero{
+    background:linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url("../images/3.jpg");
+    width: 100%;
     height: 100vh;
-}
-.header .hero-space{
-    padding-top: 7px;
-    color: rgba(0, 0, 0, 0);
-} 
-
-.header .hero-section{
-    position: absolute;
-    top: 30%;
-    left: 3%;
-    text-align: left;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    
 }
 
-
-.header .hero-section h1{
+.hero h1{
     text-transform: uppercase;
     font-weight: bold;
     color: var(--yellow-color);
     font-size: 40px;
 }
 
-.header .hero-section h3{ 
+.hero h3{ 
     font-weight: bold;
     color: var(--white-color);
     font-size: 60px;
 }
 
-.header .hero-section p{ 
+.hero p{ 
     text-transform: uppercase;
     font-weight:500;
     color: var(--white-color);
     font-size: 14px;
 }
 
-.header .hero-section .btn-hero{
+.hero .btn-hero{
     background-color: var(--book-now);
-    padding: 13px 40px;
+    padding: 12px 35px;
     color: var(--white-color);
     font-weight: 400;
 }
 
-.header .hero-section .btn-hero:hover{
+.hero .btn-hero:hover{
     background: #FBC009;
     color: var(--black-color);
 }
 
-/*---x-------hero-------x-----*/
 
-/*---x-------header------x-------*/
+
+
+/*----------Mobile Responsive------x-------*/
+
+@media only screen and (max-width: 1000px) {
+   
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero h3{
+        font-size: 50px;
+    }
+
+    .hero p{ 
+        font-size: 14px;
+    }
+    
+    .hero .btn-hero{
+        padding: 15px 35px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 760px) {
+    
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero h3{
+        font-size: 40px;
+    }
+
+    .hero p{ 
+        font-size: 11px;
+    }
+    
+    .hero .btn-hero{
+        padding: 10px 30px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 490px) {
+    
+    .hero h1{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .hero h3{
+        word-wrap: break-word;
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .hero p{ 
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero .hero-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero .hero-btn{
+        padding: 8px 15px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 380px) {
+   
+    .hero h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero h3{
+        word-wrap: break-word;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero p{ 
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .hero .btn-hero{
+        padding: 8px 15px;
+        align-items: center;
+    }
+    
+} 
+
+
+
+
+
+@media only screen and (max-width: 300px) {
+   
+    .hero h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero h3{
+        word-wrap: break-word;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero p{ 
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .hero .btn-hero{
+        padding: 5px 13px;
+        align-items: center;
+    }
+    
+}
+/*----------Mobile Responsive------x-------*/
+
+
+
+/*---x-------hero-------x-----*/
 
 
 

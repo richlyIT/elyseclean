@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
    
+    
     <!------------Bootstap CSS------------>
     <link rel="stylesheet" href="./assets/vender/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -21,89 +22,103 @@
       <!----X--------Google font------X----->
 
      <!----X-------Style CSS------X----->
-    <link rel="stylesheet" href="./assets/css/Style.css">
-    <!----X-------Style CSS------X----->
+     <link rel="stylesheet" href="./assets/css/Style.css">
+     <!----X-------Style CSS------X----->
 
     <title>ElyseClean</title>
 
   </head>
   <body>
-    <header id="hero" class="header">
-        <div class="hero-space">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><h1>Elyseclean</h1></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                          <a class="nav-link active"href="#">HOME</a>
-                        </li>
-    
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-    
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            SERVICES
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">CARPET CLEANING</a></li>
-                            <li><a class="dropdown-item" href="#">DEEP CLEANING</a></li>
-                            <li><a class="dropdown-item" href="#">DESINFECTING SERVICE</a></li>
-                            <li><a class="dropdown-item" href="#">HOME CLEANING</a></li>
-                            <li><a class="dropdown-item" href="#">MOVING</a></li>
-                            <li><a class="dropdown-item" href="#">OFFICE & COMMERCIAL</a></li>
-                          </ul>
-                        </li>
-    
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              AREAS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          </li>
-                        
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                          </li>
-                       
-                        <li class="nav-item">
-                          <a class="nav-link" href="#" >CONTACT</a>
-                        </li>
+
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bgcolor">
+        <div class="container">
+            <a class="navbar-brand" href="#"><h1>Elyseclean</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hambuger"><i class="fa-solid fa-align-left"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active"href="#">HOME</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SERVICES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">CARPET CLEANING</a></li>
+                      <li><a class="dropdown-item" href="#">DEEP CLEANING</a></li>
+                      <li><a class="dropdown-item" href="#">DESINFECTING SERVICE</a></li>
+                      <li><a class="dropdown-item" href="#">HOME CLEANING</a></li>
+                      <li><a class="dropdown-item" href="#">MOVING</a></li>
+                      <li><a class="dropdown-item" href="#">OFFICE & COMMERCIAL</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        AREAS
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Bellevue</a></li>
+                        <li><a class="dropdown-item" href="#">Bothell</a></li>
+                        <li><a class="dropdown-item" href="#">Edmonds</a></li>
+                        <li><a class="dropdown-item" href="#">Everett</a></li>
+                        <li><a class="dropdown-item" href="#">Kirkland</a></li>
+                        <li><a class="dropdown-item" href="#">Lynnwood</a></li>
+                        <li><a class="dropdown-item" href="#">Mercer Island</a></li>
+                        <li><a class="dropdown-item" href="#">Mukilteo</a></li>
+                        <li><a class="dropdown-item" href="#">Redmond</a></li>
+                        <li><a class="dropdown-item" href="#">Shoreline</a></li>
                       </ul>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                 
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" >CONTACT</a>
+                    </li>
+                </ul>
 
-                      <a href="" class="btn btn-brand ms-lg-3">
-                            <span>
-                                <i class='bx bxs-calendar m-lg-2'></i>
-                            </span> 
-                            Book Now
-                        </a>
-                        
-                  </div>
-                </div>
-              </nav>
-        </div>
-
-          <!------hero section------->
-         
-                <div class="hero-section">
-                    <h1 cl>ElyseClean</h1>
-                    <h3 class="mt-4">  Seattle’s Best House & <br>Airbnb Cleaning Service.</h3>
-                    <p>RELIABLE HOUSE CLEANING PROFESSIONALS SERVING THE GREATER SEATTLE AREA</p>
-                    <a href="" class="btn btn-hero">SCHEDULE YOUR CLEANING SERVICE</a>
-                </div>
-            <!--x----hero section---x---->
-
+                <a href="" class="btn btn-brand ms-lg-3">
+                  <span>
+                    <i class='bx bxs-calendar m-lg-2'></i>
+                  </span> 
+                  Book Now
+                </a>
+                  
+            </div>
+          </div>
+        </nav>
     </header>
+
+
+<!------hero section------->  
+<div class="hero">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 cl>ElyseClean</h1>
+      <h3 class="mt-4">  Seattle’s Best House & <br>Airbnb Cleaning Service.</h3>
+      <p>RELIABLE HOUSE CLEANING PROFESSIONALS SERVING THE GREATER SEATTLE AREA</p>
+      <div class="py-4 hero-btn">
+        <a href="" class="btn btn-hero">SCHEDULE YOUR CLEANING SERVICE</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--x----hero section---x---->
+  
 
 
     <!--------------------Main------------------->
