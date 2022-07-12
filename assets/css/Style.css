@@ -53,6 +53,13 @@ font-family: 'Roboto', sans-serif; */
     margin-top: 0;
 }
 
+
+.bgcolor.scrolled ul.navbar-nav > li > a.nav-link:hover{
+    color: var(--black-color);
+}
+
+
+
 nav a.nav-links{
     letter-spacing: 0.0375rem;
     cursor: pointer;
